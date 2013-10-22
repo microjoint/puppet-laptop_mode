@@ -9,28 +9,28 @@ class laptop_mode::params {
   case $::osfamily {
     'Debian': {
       $config          = '/etc/laptop-mode/laptop-mode.conf'
-      $package_name    = [ 'laptop_mode' ]
-      $service_name    = 'laptop_mode'
+      $package_name    = [ 'laptop-mode-tools' ]
+      $service_name    = 'laptop-mode'
     }
     'RedHat': {
       $config          = '/etc/laptop-mode/laptop-mode.conf'
-      $package_name    = [ 'laptop_mode' ]
-      $service_name    = 'laptop_mode'
+      $package_name    = [ 'laptop-mode-tools' ]
+      $service_name    = 'laptop-mode'
     }
     'SuSE': {
       $config          = '/etc/laptop-mode/laptop-mode.conf'
-      $package_name    = [ 'laptop_mode' ]
-      $service_name    = 'laptop_mode'
+      $package_name    = [ 'laptop-mode-tools' ]
+      $service_name    = 'laptop-mode'
     }
     'FreeBSD': {
       $config          = '/etc/laptop-mode/laptop-mode.conf'
       $package_name    = ['net/laptop_mode']
-      $service_name    = 'laptop_mode'
+      $service_name    = 'laptop-mode'
     }
     'Archlinux': {
       $config          = '/etc/laptop-mode/laptop-mode.conf'
-      $package_name    = [ 'laptop_mode' ]
-      $service_name    = 'laptop_mode'
+      $package_name    = [ 'laptop-mode-tools' ]
+      $service_name    = 'laptop-mode'
     }
     'Linux': {
       # Account for distributions that don't have $::osfamily specific settings.
@@ -38,7 +38,7 @@ class laptop_mode::params {
         'Gentoo': {
           $config          = '/etc/laptop-mode/laptop-mode.conf'
           $package_name    = ['net-misc/laptop_mode']
-          $service_name    = 'laptop_mode'
+          $service_name    = 'laptop-mode'
         }
         default: {
           fail("The ${module_name} module is not supported on an ${::operatingsystem} distribution.")
