@@ -1,6 +1,6 @@
 class laptop_mode (
   $config           = $laptop_mode::params::config,
-  $config_template  = $laptop_mode::params::config_template,
+  config_template  = $laptop_mode::params::config_template,
   $package_ensure   = $laptop_mode::params::package_ensure,
   $package_name     = $laptop_mode::params::package_name,
   $service_enable   = $laptop_mode::params::service_enable,
