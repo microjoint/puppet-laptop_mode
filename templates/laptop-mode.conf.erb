@@ -265,13 +265,13 @@ CONTROL_NOATIME=0
 # Should laptop use relatime instead of noatime? The "relatime" mount option has
 # more standards-compliant semantics, and allows more applications to work,
 # while retaining a low level of atime updates (i.e., disk writes).
-USE_RELATIME=1
+USE_RELATIME=0
 
 
 #
 # Should laptop mode tools control the hard drive idle timeout settings?
 #
-CONTROL_HD_IDLE_TIMEOUT=0
+CONTROL_HD_IDLE_TIMEOUT=1
 
 
 #
@@ -329,7 +329,7 @@ LM_HD_WRITECACHE=0
 # disable this. If you do, then your hard drives will probably not spin down
 # anymore.
 #
-CONTROL_MOUNT_OPTIONS=0
+CONTROL_MOUNT_OPTIONS=1
 
 
 #
